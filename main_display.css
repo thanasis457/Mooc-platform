@@ -1,0 +1,68 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+body{
+  overflow: visible;
+  position:relative;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.two_options .button{
+  border-width: 8px;
+}
+.first_option{
+  width:325px;
+  height:250px;
+  background-color: rgb(223, 154, 154);
+  padding:1em;
+  border-style: solid;
+  color:rgb(186, 39, 39);
+  border-color: rgb(212, 87, 87);
+  border-radius: 45px;
+  left: calc(100% /5.5);
+  top: calc(100% /6);
+  position:absolute;
+}
+.first_option:hover{
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 10px;
+}
+.first_option span{
+  font-family: "Times",sans-serif;
+  margin-left:5px;
+  letter-spacing: 12px;
+  height:auto;
+  font-size: 100px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+.second_option{
+  width:325px;
+  height:250px;
+  background-color: rgb(223, 154, 154);
+  padding:1em;
+  border-style: solid;
+  color:rgb(186, 39, 39);
+  border-color: rgb(212, 87, 87);
+  border-radius: 45px;
+  margin-left: 60%;
+  top: calc(100% /6);
+  position:absolute;
+}
+.second_option:hover{
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 10px;
+}
+.second_option span{
+  margin-left:0px;
+  letter-spacing: 3px;
+  height:auto;
+  font-size: 70px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
