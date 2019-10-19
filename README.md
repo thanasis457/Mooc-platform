@@ -1,5 +1,5 @@
 # Mooc-platform
-An all-in-one app combining courses from all major MOOC platfroms. These include: Coursera, Edx, MitOCW, and FutureLearn.
+An all-in-one gui app combining courses from all major MOOC platfroms. These include: Coursera, Edx, MitOCW, and FutureLearn.
 
 All the courses are locally parsed, meaing you can browse the courses stored even when offline.
 
