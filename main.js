@@ -1,10 +1,12 @@
-const electron=require('electron')
-const { app, BrowserWindow } = require('electron')
+const electron=require('electron');
+const { app, BrowserWindow } = require('electron');
+var path=require('path');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
-let win
-
+let win;
+const nativeImage=electron.nativeImage;
+let myicon=nativeImage.createFromPath(path.join(__dirname,'mooc-logo.png'));
 function createWindow () {
   // Create the browser window.
   const {width,height}=electron.screen.getPrimaryDisplay().workAreaSize
@@ -13,9 +15,9 @@ function createWindow () {
     height,
     webPreferences: {
       nodeIntegration: true
-    }
-  })
-
+    },
+    icon: myicon
+  });
   // and load the index.html of the app.
   win.loadFile('main_display.html')
 
@@ -30,12 +32,11 @@ function createWindow () {
     win = null
   })
 }
-app.disableHardwareAcceleration();
+// app.disableHardwareAcceleration();
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on('ready', createWindow)
-
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
   // On macOS it is common for applications and their menu bar

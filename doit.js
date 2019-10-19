@@ -1,9 +1,11 @@
-function load() {
+function load(platform) {
 	var fs = require("fs");
-	var num = fs.readFileSync("/Users/thanasis/Desktop/mooc-platform/courses/numofcourses.txt");
+	var num = fs.readFileSync("/Users/thanasis/Desktop/mooc-platform/courses/"+platform+"/numofcourses.txt");
 	num=parseInt(num,10);
+	// platform=platform.toString();
+	let plat=platform;
 	for(i=0; i<num; i++){
-		path="/Users/thanasis/Desktop/mooc-platform/courses/course"+i.toString()+".json";
+		path="/Users/thanasis/Desktop/mooc-platform/courses/"+plat+"/course"+i.toString()+".json";
 		var content = fs.readFileSync(path);
 		var object = JSON.parse(content);
 		let title = object.title;
