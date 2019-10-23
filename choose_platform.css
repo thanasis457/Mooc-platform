@@ -1,7 +1,7 @@
 button{
-  font-size: 20px;
-  width:300px;
-  height:auto;
+  width: 23%;
+  height: auto;
+  position:absolute;
   background-color:rgb(238, 191, 179);
   border-radius: 8px;
   border-color: rgb(114, 25, 212);
@@ -10,37 +10,36 @@ button{
   z-index: 2;
 }
 .Coursera{
-  font-size: 50px;
-  position: relative;
+  position: absolute;
   top:20%;
   left:20%;
 }
 .Edx{
-  font-size: 50px;
   position: absolute;
   top:60%;
   left:20%;
 }
 .MitOCW{
-  font-size: 50px;
   position: absolute;
   top:20%;
   right:20%;
 }
 .FutureLearn{
-  font-size: 50px;
   position: absolute;
   top:60%;
   right:20%;
+}
+span{
+  font-size: 4vw;
+  width:10%;
 }
 .Button:hover{
   box-shadow: rgba(20, 34, 212, 0.5) 0px 10px 10px;
 }
 img{
-  width: 600px;
+  width: 40%;
   position: absolute;
   left:30%;
   top:10%;
-  height:auto;
   z-index:1;
 }
