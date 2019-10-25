@@ -1,12 +1,14 @@
 function load(platform) {
 	var fs = require("fs");
-	var num = fs.readFileSync("/Users/thanasis/Desktop/mooc-platform/courses/"+platform+"/numofcourses.txt");
+	const path=require('path');
+	platform=String(platform);
+	var num = fs.readFileSync(path.join(__dirname,"courses/",platform,"/numofcourses.txt"));
 	num=parseInt(num,10);
 	// platform=platform.toString();
 	let plat=platform;
 	for(i=0; i<num; i++){
-		path="/Users/thanasis/Desktop/mooc-platform/courses/"+plat+"/course"+i.toString()+".json";
-		var content = fs.readFileSync(path);
+		pth=path.join(__dirname,"courses/",plat,"/course"+i.toString()+".json");
+		var content = fs.readFileSync(pth);
 		var object = JSON.parse(content);
 		let title = object.title;
 		let partners=object.partners;
@@ -14,8 +16,9 @@ function load(platform) {
 		let snippet=object.snippet;
 		let description=object.description;
 		let tags=object.tags;
+		insert_into_db(object.title);
 		let li = document.createElement("LI");
-		let _title = document.createTextNode(`${title}`);
+		let _title = document.createTextNode(`${String(title)}`);
 		let _partners = document.createTextNode(`partners: ${partners}`);
 		let _platform = document.createTextNode(`Platform: ${platform}`);
 		let _snippet = document.createTextNode(`${snippet}`);
@@ -26,27 +29,16 @@ function load(platform) {
 		let h4=document.createElement("h4");
 		let h5=document.createElement("h5");
 		h1.appendChild(_title);
-		h2.appendChild(_partners);
-		h3.appendChild(_platform);
-		h4.appendChild(_snippet);
+		h3.appendChild(_partners);
+		h4.appendChild(_platform);
+		h2.appendChild(_snippet);
 		h5.appendChild(_tags);
 		//To be added: Show more option
 		li.appendChild(h1);
-		li.appendChild(h2);
 		li.appendChild(h3);
 		li.appendChild(h4);
+		li.appendChild(h2);
 		li.appendChild(h5);
 		document.getElementById("demo").appendChild(li);
 	}
-}
-function updateCourses(){
-	const { exec } = require('child_process');
-	exec('python3 scrape.py', (error, stdout, stderr) => {
-  	if (error) {
-    	alert(`exec error: ${error}`);
-			alert(`Something wrong happened: ${stdout}`);
-			alert(`stderr: ${stderr}`);
-    	return;
-  	}
-	});
 }

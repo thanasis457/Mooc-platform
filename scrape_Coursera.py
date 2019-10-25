@@ -4,7 +4,7 @@ import json
 cc=scraper.Coursera().courses()
 cnt=0
 for i in range(len(cc)):
-    opened='courses/Coursera/'+str(cnt)+'.json';
+    opened='courses/Coursera/course'+str(cnt)+'.json';
     with open(opened,"w+") as write:
         json.dump(cc[i]._dict(),write,indent=4)
     cnt+=1

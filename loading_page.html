@@ -2,9 +2,15 @@
   <head>
     <link rel="stylesheet" type="text/css" href="all_courses.css">
     <script src="doit.js"></script>
+    <script src="dbmanager.js"></script>
   </head>
-  <body onload="load('Coursera')">
+  <body>
     <ul id="demo"></ul>
+    <script>
+    var fs = require("fs");
+    var txt = fs.readFileSync('selected.txt');
+    load(txt);
+    </script>
     <script>
     </script>
   </body>
