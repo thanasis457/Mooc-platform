@@ -10,10 +10,8 @@ a{
   text-decoration: none;
   color: inherit;
 }
-.two_options .button{
+.three_options .button{
   border-width: 8px;
-}
-.first_option{
   width:325px;
   height:250px;
   background-color: rgb(223, 154, 154);
@@ -22,6 +20,8 @@ a{
   color:rgb(186, 39, 39);
   border-color: rgb(212, 87, 87);
   border-radius: 45px;
+}
+.first_option{
   left: calc(100% /5.5);
   top: calc(100% /6);
   position:absolute;
@@ -41,14 +41,6 @@ a{
   display: inline-block;
 }
 .second_option{
-  width:325px;
-  height:250px;
-  background-color: rgb(223, 154, 154);
-  padding:1em;
-  border-style: solid;
-  color:rgb(186, 39, 39);
-  border-color: rgb(212, 87, 87);
-  border-radius: 45px;
   margin-left: 60%;
   top: calc(100% /6);
   position:absolute;
@@ -65,4 +57,30 @@ a{
   text-align: center;
   vertical-align: middle;
   display: inline-block;
+}
+.third_option{
+  width:300px;
+  border-radius: 12px;
+  background-color: inherit +10;
+  border-width: 0px;
+  position: absolute;
+  bottom: 1%;
+  margin-left:1%;
+  opacity: .4;
+  transition: 0.3s;
+}
+.third_option span{
+  margin-left:0px;
+  letter-spacing: 3px;
+  height:auto;
+  font-size: 40px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+.third_option:hover{
+  background-color: rgb(238, 145, 145);
+  transition: 0.3s;
+  opacity: 0.9;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 10px;
 }
