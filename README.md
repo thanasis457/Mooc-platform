@@ -39,4 +39,8 @@ Since you are running the scripts yourself, every time you want to start the app
 ## Issues when running from source
 1. I haven't tested any python version earlier than 3.6
 
-2. When having Anaconda installed conflicts may appear, so be sure to either disable it or uninstall it completely.
+2. When having Anaconda installed conflicts may appear, so be sure to either disable it or uninstall it completely
+
+### It is highly recommended to run from source rather than the packaged files since conflicts may appear
+
+
