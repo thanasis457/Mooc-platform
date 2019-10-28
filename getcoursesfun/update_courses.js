@@ -15,11 +15,12 @@ function updateCourses(platform){
 			alert(platform+" courses downloaded");
 			alert("Updating database");
 
-		  var con=mysql.createConnection({
-		    host: "localhost",
-		    user: "root",
-		    password: "simple1234",
-		    database: "moocs"
+			var con=mysql.createConnection({
+		    host: "remotemysql.com",
+		    user: "8ziCOBYDx9",
+		    password: "NLZ7t0owaK",
+		    database: "8ziCOBYDx9",
+		    port: 3306
 		  });
 
 			var v=false;
@@ -32,25 +33,25 @@ function updateCourses(platform){
 				var num = fs.readFileSync("./courses/"+platform+"/numofcourses.txt");
 				num=parseInt(num,10);
 				let plat=platform;
+				var cnt=0;
 				for(i=0; i<num; i++){
 					pth="./courses/"+plat+"/course"+i.toString()+".json";
 					var content = fs.readFileSync(pth);
 					var object = JSON.parse(content);
-					String.prototype.setCharAt = function(index,chr) {
-						if(index > this.length-1) return str;
-						return this.substr(0,index) + chr + this.substr(index+1);
-					}
 					var ti=String(object.title);
 					ti=ti.replace(/'/g,'i');
 					sql="INSERT INTO courses (name) VALUES('"+ti+"') ON DUPLICATE KEY UPDATE hits=0";
 					con.query(sql,function(err,result){
 			      if(err) throw err;
 			      console.log(result);
+						var elem=document.getElementById('active').innerHTML=(cnt+1)+"/"+num;
+						cnt++;
 			    });
 					// con.query('DELETE FROM courses',function(err,result){
 			    //   if(err) throw(err);
 			    //   console.log(result);
 			    // });
+
 				}
 				v=true;
 				con.end(function(err,result){

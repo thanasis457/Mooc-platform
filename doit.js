@@ -16,7 +16,6 @@ function load(platform) {
 		let snippet=object.snippet;
 		let description=object.description;
 		let tags=object.tags;
-		insert_into_db(object.title);
 		let li = document.createElement("LI");
 		let _title = document.createTextNode(`${String(title)}`);
 		let _partners = document.createTextNode(`partners: ${partners}`);
