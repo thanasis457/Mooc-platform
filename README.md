@@ -6,6 +6,12 @@ All the courses are locally parsed, meaing you can browse the courses stored eve
 When online, though, additional benefits are added:
 By choosing universities you are planning to apply to (catered towards students) the results are going to be sortered based on the courses that users with similar preferences click on.
 
+Things to note:
+
+1.The project is running off Electron.
+
+2.For now only Coursera and Edx (the two biggest platforms) are properly working. I am planning on expanding to          MitOCW and FutureLearn soon. Loading the courses of MitOCW and FutureLearn will not do anything.
+
 ## Installation
 ### For windows:
 
@@ -44,3 +50,4 @@ Since you are running the scripts yourself, every time you want to start the app
 ### It is highly recommended to run from source rather than the packaged files since conflicts may appear
 
 
+Authors: Athanasios Taprantzis
