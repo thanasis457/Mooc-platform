@@ -1,0 +1,19 @@
+{
+  "Caltech": false,
+  "MIT": false,
+  "Stanford University": false,
+  "Princeton University": false,
+  "Columbia University": true,
+  "Harvard University": false,
+  "Georgia Tech": false,
+  "Berkley University": false,
+  "UCLA University": false,
+  "Yale University": false,
+  "Northwestern University": false,
+  "Boston University": false,
+  "Michigan State University": false,
+  "UChicago": false,
+  "Brown University": false,
+  "Toronto University": false,
+  "undefined": false
+}

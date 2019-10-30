@@ -1,6 +1,7 @@
 ul{
   list-style-type: none;
   text-align: center;
+  padding-top: 40px;
 }
 li{
   text-decoration:none;
@@ -34,4 +35,32 @@ h4{
 h5{
   margin-left: 2%;
   margin-right:2%;
+}
+:focus {outline:0 !important;}
+input{
+  position: fixed;
+  text-align: center;
+  font-size: 20px;
+  width: 150px;
+  height: 30px;
+  border-radius: 8px;
+  border-color: rgb(242, 55, 74);
+}
+#search2{
+  position: fixed;
+  font-size: 20px;
+  border-radius: 6px;
+  border-color: inherit;
+  margin-left: 155;
+  width: 100px;
+  height: 30px;
+}
+#back{
+  position: fixed;
+  margin-left: 260;
+  font-size: 20px;
+  border-radius: 6px;
+  border-color: inherit;
+  width: 100px;
+  height: 30px;
 }

@@ -57,7 +57,7 @@ function updateCourses(platform){
 				con.end(function(err,result){
 					if(err) throw err;
 					if(!alert("Updated")){
-						window.location.href="../load_courses.html";
+						window.location.href=path.join(__dirname,"..","load_courses.html");
 					}
 				});
 			});

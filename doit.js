@@ -1,13 +1,13 @@
-function load(platform) {
+function load(platform,cc){
 	var fs = require("fs");
 	const path=require('path');
 	platform=String(platform);
-	var num = fs.readFileSync(path.join(__dirname,"courses/",platform,"/numofcourses.txt"));
+	var num = fs.readFileSync(path.join(__dirname,"courses",platform,"numofcourses.txt"));
 	num=parseInt(num,10);
 	// platform=platform.toString();
 	let plat=platform;
 	for(i=0; i<num; i++){
-		pth=path.join(__dirname,"courses/",plat,"/course"+i.toString()+".json");
+		pth=path.join(__dirname,"courses",plat,"course"+i.toString()+".json");
 		var content = fs.readFileSync(pth);
 		var object = JSON.parse(content);
 		let title = object.title;
@@ -17,6 +17,8 @@ function load(platform) {
 		let description=object.description;
 		let tags=object.tags;
 		let li = document.createElement("LI");
+
+		if(String(cc)!="" && !String(title).toLowerCase().includes(String(cc))) continue;
 		let _title = document.createTextNode(`${String(title)}`);
 		let _partners = document.createTextNode(`partners: ${partners}`);
 		let _platform = document.createTextNode(`Platform: ${platform}`);
@@ -40,4 +42,13 @@ function load(platform) {
 		li.appendChild(h5);
 		document.getElementById("demo").appendChild(li);
 	}
+}
+function searchfun(){
+	var s=document.getElementById("search").value;
+	var fs = require("fs");
+	var txt = fs.readFileSync('selected.txt');
+	let resultList = document.getElementById("demo");
+  resultList.innerHTML = "";
+	load(txt,s.toLowerCase());
+	window.scrollTo(0,0);
 }
