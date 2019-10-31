@@ -29,18 +29,21 @@ function load(platform,cc){
 		let h3=document.createElement("h3");
 		let h4=document.createElement("h4");
 		let h5=document.createElement("h5");
+		let a=document.createElement("A");
 		h1.appendChild(_title);
 		h3.appendChild(_partners);
 		h4.appendChild(_platform);
 		h2.appendChild(_snippet);
 		h5.appendChild(_tags);
+		a.href=object.url;
 		//To be added: Show more option
 		li.appendChild(h1);
 		li.appendChild(h3);
 		li.appendChild(h4);
 		li.appendChild(h2);
 		li.appendChild(h5);
-		document.getElementById("demo").appendChild(li);
+		a.appendChild(li);
+		document.getElementById("demo").appendChild(a);
 	}
 }
 function searchfun(){

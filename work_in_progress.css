@@ -5,3 +5,9 @@ p{
   font-size: 40px;
   text-align: center;
 }
+.back{
+  font-size: 25px;
+  width:200px;
+  border-radius: 8px;
+}
+:focus {outline:0 !important;}

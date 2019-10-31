@@ -17,11 +17,11 @@ function unis(){
       var un=fs.readFileSync(pth);
       var ll=JSON.parse(un);
       if(ll[this.name]==false){
-        checkbox.checked=true;
+        this.checked=true;
         ll[this.name]=true;
       }
       else{
-        checkbox.checked=false;
+        this.checked=false;
         ll[this.name]=false;
       }
       // alert(ll[this.name]);
@@ -44,26 +44,6 @@ function unis(){
     let li=document.createElement("LI");
     li.appendChild(show);
     document.getElementById("Universities").appendChild(li);
-  }
-  function change(){
-    var fs=require("fs");
-    const path=require('path');
-    pth=path.join(__dirname,"universities.json");
-    var un=fs.readFileSync(pth);
-    var ll=JSON.parse(un);
-    var i=checkbox.name;
-    alert(checkbox.name);
-    if(ll[i]==false){
-      checkbox.checked=true;
-      ll[i]=true;
-    }
-    else{
-      checkbox.checked=false;
-      ll[i]=false;
-    }
-    alert(ll[i]);
-    alert(i);
-    ch(ll);
   }
   function ch(list){
     var fs=require("fs");

@@ -39,3 +39,4 @@ p{
   text-align: center;
   font-size: 20px;
 }
+:focus {outline:0 !important;}

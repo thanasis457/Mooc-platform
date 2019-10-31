@@ -3,7 +3,7 @@
   "MIT": false,
   "Stanford University": false,
   "Princeton University": false,
-  "Columbia University": true,
+  "Columbia University": false,
   "Harvard University": false,
   "Georgia Tech": false,
   "Berkley University": false,
@@ -14,6 +14,5 @@
   "Michigan State University": false,
   "UChicago": false,
   "Brown University": false,
-  "Toronto University": false,
-  "undefined": false
+  "Toronto University": false
 }

@@ -84,3 +84,30 @@ a{
   opacity: 0.9;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 10px;
 }
+:focus {outline:0 !important;}
+.fourth_option{
+  width:300px;
+  border-radius: 12px;
+  background-color: inherit +10;
+  border-width: 0px;
+  position: absolute;
+  bottom: 1%;
+  margin-left:calc(100% - 310px);
+  opacity: .4;
+  /* transition: 0.3s; */
+}
+.fourth_option span{
+  margin-left:0px;
+  letter-spacing: 3px;
+  height:auto;
+  font-size: 40px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+.fourth_option:hover{
+  background-color: rgb(238, 145, 145);
+  transition: 0.3s;
+  opacity: 0.9;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 10px;
+}

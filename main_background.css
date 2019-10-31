@@ -11,3 +11,4 @@ body {
     from { background-position: 0 0; }
     to { background-position: -800px -600px; }
 }
+:focus {outline:0 !important;}

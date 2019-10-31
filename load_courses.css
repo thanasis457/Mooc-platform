@@ -1,0 +1,11 @@
+button{
+  width:130px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgb(114, 204, 178);
+}
+html{
+  background-color: rgb(234, 245, 242);
+
+}
+:focus {outline:0 !important;}
