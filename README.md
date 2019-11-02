@@ -15,15 +15,15 @@ Things to note:
 ## Installation
 ### For windows:
 
-Head over to: (link to be added) and download the x86 file
+A link is going to be added in the future.
 
 ### For mac:
 
-Head over to: and downlaod the darwin app
+A link is going to be added in the future.
 
 ### For linux:
 
-Download the AppImage file.
+A link is going to be added in the future.
 
 ## Running from source:
 
