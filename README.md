@@ -1,4 +1,9 @@
 # Mooc-platform
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/thanasis457/Mooc-platform/blob/master/LICENSE)
+![npm](https://img.shields.io/npm/v/npm)
+![npm](https://img.shields.io/npm/v/node?label=node.js)
+![Javascript](https://img.shields.io/badge/Javascript-Latest-yellowgreen)
+
 An all-in-one gui app combining courses from all major MOOC platfroms. These include: Coursera, Edx, MitOCW, and FutureLearn.
 
 All the courses are locally parsed, meaing you can browse the courses stored even when offline.
