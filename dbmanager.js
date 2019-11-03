@@ -1,10 +1,12 @@
 function insert_into_db(object){
   var mysql=require("mysql");
+  var fs=require("fs");
+  const path=require('path');
   var con=mysql.createConnection({
-    host: "moocplatform.cingron5sbhn.eu-west-2.rds.amazonaws.com",
-    user: "thanasis457",
-    password: "simple1234",
-    database: "moocplatform",
+    host: "remotemysql.com",
+    user: "8ziCOBYDx9",
+    password: "NLZ7t0owaK",
+    database: "8ziCOBYDx9",
     port: 3306
   });
   con.connect(function(err){
@@ -16,18 +18,34 @@ function insert_into_db(object){
     // });
 
     // sql="INSERT INTO courses (name) VALUES('"+String(object)+"') ON DUPLICATE KEY UPDATE hits=hits";
+    // pth=path.join(__dirname,"universities.json");
+    // var un=fs.readFileSync(pth);
+    // var list=JSON.parse(un);
+    // for(i in list){
+    //   var out=i.split(" ");
+    //   var sql='ALTER TABLE courses ADD '+String(out[0])+' INT default 0';
+    //   con.query(sql,function(err,result){
+    //   if(err) throw err;
+    //     console.log(result);
+    //   });
+    //   // console.log(i);
+    // }
+    con.query("SELECT * FROM courses ORDER BY hits DESC LIMIT 5",function(err,result){
+      if(err) throw err;
+      console.log(result);
+      con.end();
+    });
+    // con.query("SELECT * FROM courses WHERE name='The Value of Business Models'",function(err,result){
+    //   if(err) throw(err);
+    //   console.log(result);
+    //   con.end();
+    // });
+    // var sql='ALTER TABLE courses ADD partners varchar(2000) default ""';
     // con.query(sql,function(err,result){
     //   if(err) throw err;
     //   console.log(result);
+    //   con.end();
     // });
-    // // con.query("DELETE FROM courses WHERE name='"+String(object)+"'",function(err,result){
-    //   if(err) throw err;
-    // });
-    // con.query("SELECT * FROM courses",function(err,result){
-    //   if(err) throw(err);
-    //   console.log(result);
-    // });
-    // con.end();
   });
 }
-insert_into_db("Gamification");
+insert_into_db("Anything");

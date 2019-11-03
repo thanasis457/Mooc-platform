@@ -53,3 +53,18 @@ function unis(){
     });
   }
 }
+function load_hits(){
+  var fs=require("fs");
+  const path=require('path');
+  var mysql=require('mysql');
+  var con=mysql.createConnection({
+    host: "remotemysql.com",
+    user: "8ziCOBYDx9",
+    password: "NLZ7t0owaK",
+    database: "8ziCOBYDx9",
+    port: 3306
+  });
+  con.connect(function(err){
+    if(err) throw err;
+  });
+}

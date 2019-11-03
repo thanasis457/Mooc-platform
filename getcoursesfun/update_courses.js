@@ -40,13 +40,19 @@ function updateCourses(platform){
 					var object = JSON.parse(content);
 					var ti=String(object.title);
 					ti=ti.replace(/'/g,'i');
-					sql="INSERT INTO courses (name) VALUES('"+ti+"') ON DUPLICATE KEY UPDATE hits=0";
+					var snip=object.snippet;
+					snip=snip.replace(/'/g,'');
+					snip=snip.replace(/&/g,'');
+					snip=snip.replace(/;/g,'');
+					snip=snip.replace(/"/g,'');
+					sql="INSERT INTO courses (name,partners,platform,snippet,tags,url) VALUES('"+ti+"','"+object.partners+"','"+object.platform+"','"+snip+"','"+object.tags+"','"+object.url+"') ON DUPLICATE KEY UPDATE hits=hits";
 					con.query(sql,function(err,result){
 			      if(err) throw err;
 			      console.log(result);
 						var elem=document.getElementById('active').innerHTML=(cnt+1)+"/"+num;
 						cnt++;
 			    });
+					// foreign="ALTER TABLE courses ADD "+
 					// con.query('DELETE FROM courses',function(err,result){
 			    //   if(err) throw(err);
 			    //   console.log(result);
