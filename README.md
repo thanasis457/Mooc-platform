@@ -48,4 +48,4 @@ Since you are running the scripts yourself, every time you want to start the app
 
 Supervisor: Dimosthenis Zagaroulis
 
-Authors: Athanasios Taprantzis (leader), Zizel Delikanaki
+Authors: Athanasios Taprantzis (leader), Zizel Delikanaki (Assistant)
