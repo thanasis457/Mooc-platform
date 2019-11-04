@@ -44,7 +44,11 @@ Since you are running the scripts yourself, every time you want to start the app
 
 2. When having Anaconda installed conflicts may appear, so be sure to either disable it or uninstall it completely
 
-### It is highly recommended to run from source rather than the packaged files since conflicts may appear
+# Screenshots
+![Screenshot](https://github.com/thanasis457/Mooc-platform/blob/master/images/Screenshot%202019-11-04%20at%206.15.48%20PM.png)
+![Screenshot](https://github.com/thanasis457/Mooc-platform/blob/master/images/Screenshot%202019-11-04%20at%206.16.05%20PM.png)
+![Screenshot](https://github.com/thanasis457/Mooc-platform/blob/master/images/Screenshot%202019-11-04%20at%206.16.27%20PM.png)
+![Screenshot](https://github.com/thanasis457/Mooc-platform/blob/master/images/Screenshot%202019-11-04%20at%206.16.49%20PM.png)
 
 Supervisor: Dimosthenis Zagaroulis
 
