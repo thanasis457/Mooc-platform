@@ -6,10 +6,10 @@
 
 An all-in-one gui app combining courses from all major MOOC platfroms. These include: Coursera, Edx, MitOCW, and FutureLearn.
 
-All the courses are locally parsed, meaing you can browse the courses stored even when offline.
+All the courses are locally parsed, meaning you can browse the courses stored even when offline.
 
 When online, though, additional benefits are added:
-By choosing universities you are planning to apply to (catered towards students) the results are going to be sortered based on the courses that users with similar preferences click on.
+By choosing universities you are planning to apply to (catered towards students) the results are going to be sorted based on the courses that users with similar preferences click on.
 
 Things to note:
 
