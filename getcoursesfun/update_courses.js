@@ -17,9 +17,9 @@ function updateCourses(platform){
 
 			var con=mysql.createConnection({
 		    host: "remotemysql.com",
-		    user: "8ziCOBYDx9",
-		    password: "NLZ7t0owaK",
-		    database: "8ziCOBYDx9",
+		    user: "PuYOkkBsV3",
+		    password: "QGGyinkJO3",
+		    database: "PuYOkkBsV3",
 		    port: 3306
 		  });
 

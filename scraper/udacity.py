@@ -1,5 +1,5 @@
 import requests, json
-from markdown2 import markdown
+
 from bs4 import BeautifulSoup
 from . import Course, Platform
 
@@ -31,11 +31,8 @@ class Udacity(Platform):
                             description, tags, url, snippet=snippet)
 
             courses.append(course)
-        
+
         return courses
 
 def markdown_to_text(md):
     return BeautifulSoup(markdown(md), 'lxml').text
-
-
-
