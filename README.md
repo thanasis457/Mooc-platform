@@ -13,9 +13,7 @@ By choosing universities you are planning to apply to (catered towards students)
 
 Things to note:
 
-1.The project is running off Electron.
-
-2.For now only Coursera and Edx (the two biggest platforms) are properly working. We are planning on expanding to          MitOCW and FutureLearn soon. Due to changes in their website the courses are no longer being loaded properly. Loading the courses of MitOCW and FutureLearn from inside the app will not do anything.
+The project is running off Electron.
 
 ## Installation
 ### For windows/mac/linux:
