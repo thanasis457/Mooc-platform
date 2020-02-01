@@ -1,6 +1,8 @@
 const electron=require('electron');
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, globalShortcut} = require('electron');
 var path=require('path');
+const electronLocalshortcut = require('electron-localshortcut');
+
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -18,6 +20,14 @@ function createWindow () {
     },
     icon: myicon
   });
+  const { Menu, MenuItem } = require('electron')
+  const menu = new Menu()
+
+  menu.append(new MenuItem({
+    label: 'Print',
+    accelerator: 'CmdOrCtrl+P',
+    click: () => { console.log('time to print stuff') }
+  }))
   // and load the index.html of the app.
   win.loadFile('main_display.html')
 
@@ -31,6 +41,15 @@ function createWindow () {
     // when you should delete the corresponding element.
     win = null
   })
+  electronLocalshortcut.register(win, 'CmdOrCtrl+B', () => {
+    shortcutPressed();
+});
+
+
+function shortcutPressed () {
+    var focusedWin = BrowserWindow.getFocusedWindow();
+    win.loadFile('choose_platform.html');
+}
 }
 app.disableHardwareAcceleration();
 // This method will be called when Electron has finished
@@ -45,6 +64,7 @@ app.on('window-all-closed', () => {
     app.quit()
   }
 })
+
 
 app.on('activate', () => {
   // On macOS it's common to re-create a window in the app when the
