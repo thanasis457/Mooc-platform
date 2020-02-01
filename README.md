@@ -11,9 +11,11 @@ All the courses are locally parsed, meaning you can browse the courses stored ev
 When online, though, additional benefits are added:
 By choosing universities you are planning to apply to (catered towards students) the results are going to be sorted based on the courses that users with similar preferences click on.
 
-Things to note:
+### Things to note:
 
-The project is running off Electron.
+1. The project is running off of Electron.
+
+2. When clicking on a course, the web page of the course is going to be opened. To go back press ```Ctrl or Cmd + B```
 
 ## Installation
 ### For windows/mac/linux:
