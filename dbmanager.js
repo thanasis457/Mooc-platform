@@ -33,8 +33,13 @@ function insert_into_db(object){
     //   });
     //   // console.log(i);
     // }
-    // con.query("SELECT * FROM courses ORDER BY hits DESC LIMIT 5",function(err,result){
-    //   if(err) throw err;
+    con.query("SELECT UPenn FROM courses ORDER BY hits DESC LIMIT 5",function(err,result){
+      if(err) throw err;
+      console.log(result);
+      con.end();
+    });
+    // con.query("SELECT * FROM courses WHERE name='The Value of Business Models'",function(err,result){
+    //   if(err) throw(err);
     //   console.log(result);
     //   con.end();
     // });

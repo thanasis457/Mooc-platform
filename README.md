@@ -11,11 +11,11 @@ All the courses are locally parsed, meaning you can browse the courses stored ev
 When online, though, additional benefits are added:
 By choosing universities you are planning to apply to (catered towards students) the results are going to be sorted based on the courses that users with similar preferences click on.
 
-Things to note:
+### Things to note:
 
-1.The project is running off Electron.
+1. The project is running off of Electron.
 
-2.For now only Coursera and Edx (the two biggest platforms) are properly working. We are planning on expanding to          MitOCW and FutureLearn soon. Due to changes in their website the courses are no longer being loaded properly. Loading the courses of MitOCW and FutureLearn from inside the app will not do anything.
+2. When clicking on a course, the web page of the course is going to be opened. To go back press ```Ctrl or Cmd + B```
 
 ## Installation
 ### For windows/mac/linux:
@@ -43,6 +43,9 @@ Since you are running the scripts yourself, every time you want to start the app
 1. Haven't tested any python version earlier than 3.6
 
 2. When having Anaconda installed conflicts may appear, so be sure to either disable it or uninstall it completely
+
+## Other issues
+Due to constant changes in the websites of the platforms, some MOOC platforms may not work properly.
 
 # Screenshots
 ![Screenshot](https://github.com/thanasis457/Mooc-platform/blob/master/images/Screenshot%202019-11-04%20at%206.15.48%20PM.png)

@@ -1,3 +1,6 @@
-node_modules
+/node_modules/**
 scraper/__pycache__
-courses
+!courses/
+courses/*
+selected.txt
+universities.json
