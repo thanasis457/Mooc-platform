@@ -9,11 +9,11 @@ function load(platform,cc){
 	var plat=platform;
 	if(navigator.onLine){
 		var con=mysql.createConnection({
-			host: "remotemysql.com",
-			user: "PuYOkkBsV3",
-			password: "QGGyinkJO3",
-			database: "PuYOkkBsV3",
-			port: 3306
+			host: "sql7.freesqldatabase.com",
+	    user: "sql7328427",
+	    password: "vbEvKGVABL",
+	    database: "sql7328427",
+	    port: 3306
 		});
 		var data=[];
 		con.connect(function(err){
@@ -76,11 +76,11 @@ function load(platform,cc){
 						}
 						else{
 							var con=mysql.createConnection({
-								host: "remotemysql.com",
-								user: "PuYOkkBsV3",
-								password: "QGGyinkJO3",
-								database: "PuYOkkBsV3",
-								port: 3306
+								host: "sql7.freesqldatabase.com",
+						    user: "sql7328427",
+						    password: "vbEvKGVABL",
+						    database: "sql7328427",
+						    port: 3306
 							});
 							var name=this.name;
 							var url=this.id;
@@ -171,11 +171,11 @@ function load(platform,cc){
 				}
 				else{
 					var con=mysql.createConnection({
-						host: "remotemysql.com",
-						user: "PuYOkkBsV3",
-						password: "QGGyinkJO3",
-						database: "PuYOkkBsV3",
-						port: 3306
+						host: "sql7.freesqldatabase.com",
+				    user: "sql7328427",
+				    password: "vbEvKGVABL",
+				    database: "sql7328427",
+				    port: 3306
 					});
 					var name=this.name;
 					var url=this.id;

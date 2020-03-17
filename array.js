@@ -4,10 +4,10 @@ const path=require('path');
 var platform="Coursera";
 let plat=platform;
 var con=mysql.createConnection({
-  host: "remotemysql.com",
-  user: "PuYOkkBsV3",
-  password: "QGGyinkJO3",
-  database: "PuYOkkBsV3",
+  host: "sql7.freesqldatabase.com",
+  user: "sql7328427",
+  password: "vbEvKGVABL",
+  database: "sql7328427",
   port: 3306
 });
 con.connect(function(err){
