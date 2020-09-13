@@ -53,6 +53,4 @@ Due to constant changes in the websites of the platforms, some MOOC platforms ma
 ![Screenshot](https://github.com/thanasis457/Mooc-platform/blob/master/images/Screenshot%202019-11-04%20at%206.16.27%20PM.png)
 ![Screenshot](https://github.com/thanasis457/Mooc-platform/blob/master/images/Screenshot%202019-11-04%20at%206.16.49%20PM.png)
 
-Supervisor: Dimosthenis Zagaroulis
-
-Authors: Athanasios Taprantzis (Leader), Zizel Delikanaki (Assistant)
+Author: Athanasios Taprantzis
